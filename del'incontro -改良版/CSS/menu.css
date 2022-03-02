@@ -1,0 +1,48 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/*iPhone X → design時の1/3でコーディング*/
+/*ベースカラー：#3f261a*/
+/*アクセントからー：#80273f*/
+
+.hero-image.menu>img{
+    object-position: 0% 40%;  
+}
+.menu-category{
+    display: block;
+    padding-bottom: 80px;
+}
+.menu-category:last-of-type{
+    padding-bottom: 0;
+}
+.product-list{
+    display: inline-block;
+    width: 100%;
+}
+.product{
+    float: left;
+    clear: left ;
+    margin-right: 0;
+}
+.values{
+    float: right;
+}
+
+/*---------------------
+ *---------------------
+ *PC
+ *---------------------
+ *---------------------*/
+@media screen and (min-width:560px){
+    .menu-category{
+        padding-bottom: 100px;
+    }
+    .menu-category:last-of-type{
+        padding-bottom: 0;
+    }
+    .product-list{
+        columns: 2;
+        column-fill: balance;
+        column-gap: 6%;
+    }
+}
